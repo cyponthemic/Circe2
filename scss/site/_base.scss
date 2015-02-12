@@ -75,23 +75,162 @@ img.alignright {
 	}
 }
 
- // Hero
+ // Edits
 
-#homepage-hero {
-	background: url("http://foundation.zurb.com/assets/img/marquee-stars.svg") repeat scroll 0 0 #074E68;
-	padding: rem-calc(20) 0;
-	margin: - rem-calc(32) 0 rem-calc(32);
-	position: relative;
-	text-align: left;
-	height: auto;
+body {
+	background-color: white;
+}
 
-		h1 a, h4 { color: #fff; }
+* {
+	font-size: 18px;
+}
+strong {
+	font-size: 18px;
+}
+//Nav
 
-		.floatingyeti img {
-			max-width: 30%;
-			position: absolute;
-			right: rem-calc(100);
-		}
+.logotype{
 
-		.download { margin-top: rem-calc(20); }
+	width: 50%;
+	margin: $gap 25%;
+}
+
+
+#floating {
+	/* box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.15); */
+	display: none;
+	@media only screen and (max-width: 40.063em) {
+		display: none !important;
 	}
+	
+	margin-top:$gap;
+	padding: $gap $gap*2;
+	position: fixed;
+	width: $row-width/4;
+	background: white;
+	margin-left: auto;
+	z-index: 99;
+	@media only screen and (max-width: $row-width) {
+		width: 25%;
+	}
+	
+	ul {
+		margin-left: 0;
+		padding-left: 0;
+		padding-top: $gap*2;
+		width: 100%;
+		list-style: none;
+		li {
+			hr{
+				margin: $gap/4 0px $gap/2;
+				width: 10%;
+				@include single-transition(width, 1s);
+				}
+			&:hover hr{
+						width: 100%;
+						@include single-transition(width, 1s);
+						}
+			&.active hr {
+				width: 100%;
+			}
+			
+			a {
+				text-transform: uppercase;
+				font-size: 18px;
+				color: black;
+				&:hover {color:#700032;}
+			
+			}
+			
+		}
+	}
+}
+
+//page 
+
+
+header.parralax {
+	
+	position: relative;
+	height: 250px;
+	width: 100%;
+	padding-top : 180px;
+	//background parralax
+	background-position: center center;
+	background-size: 100% ;
+	background-repeat: no-repeat;	
+	&:after{
+		position: absolute;
+		content:"";
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		opacity:0.5;
+		background-color: black;
+		z-index: 0;
+	}
+	h1 {
+	text-transform: uppercase;
+	position: relative;
+	z-index: 99;
+	letter-spacing: 3px;
+	}
+	
+}
+
+// Footer
+
+#footer {
+	margin-top: $gap*3;
+	padding-top: $gap*3;
+	padding-bottom: $gap*3;
+	background-color: black;
+	
+	position: relative;
+	z-index: 1;
+	.logotype{
+		height: auto;
+		width: 10%;
+		margin: $gap 45%;
+		@media only screen and (max-width: $row-width) {
+		width: 20%;
+		margin: $gap 40%;
+	}
+
+	}
+	.widget_text p {
+		color: white;
+		font-size: 14px;
+		&>b {
+			font-size: 16px;
+		}
+	}
+}
+
+// About
+
+.main-row {
+	padding-top: 2*$gap;
+} 
+.side-content{
+	margin-top: 1em;
+	
+	img {
+		margin-bottom: $gap;
+	}
+	.twitter:before {
+		content: '\f202';
+		color: $primary-color;
+	}
+	ul,li {
+		list-style: none;
+		font-size: 14px;
+	}
+}
+
+H3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 500;
+}

@@ -1,0 +1,19 @@
+head+.home{
+	/* border: 10px solid black; */
+	max-height: 100vh;
+//Floating bar
+	.logo{
+		display: none;
+	}
+	.logotype{
+	width: 70%;
+	margin: 72px 15%;
+	}
+//Parallax.js
+.window-height{
+	height: 100vh;
+	width: auto;
+	overflow: hidden;
+}
+
+}
