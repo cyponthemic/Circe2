@@ -257,7 +257,7 @@
 		};
 
 		//forceHeight is true by default
-		_forceHeight = options.forceHeight !== false;
+		_forceHeight = options.forceHeight == false;
 
 		if(_forceHeight) {
 			_scale = options.scale || 1;
