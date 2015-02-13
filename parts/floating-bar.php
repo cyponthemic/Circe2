@@ -3,7 +3,7 @@ data--350-bottom-bottom='opactity :1 !important;'
 data--150-bottom-bottom='opactity :0 !important;'
 >	
 	
-	<img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/img/circe_wines_logo.gif">
+	<img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/img/circe_wines_logo_sml.png">
 	<img class="logotype" src="<?php echo get_stylesheet_directory_uri()?>/img/circe_wines_logotype.png">
 	 <?php
       // Left Nav Section
