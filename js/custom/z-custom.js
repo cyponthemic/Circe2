@@ -4,6 +4,7 @@
 
 
 	jQuery(document).ready(function() {
+	
 	if ( $(window).width()>1025 ) {
 	var gap = ($(window).width()-1025)/2;
 	$( "#floating" ).offset({ left: gap }).fadeIn("slow");
@@ -21,22 +22,20 @@
 	}
 	});
 	
-
-//Skrollr Init 
-// https://ihatetomatoes.net/how-to-create-a-parallax-scrolling-website/
-
-
-( function( $ ) {
-    // Init Skrollr
-    var s = skrollr.init({
-        render: function(data) {
-            //Debugging - Log the current scroll position.
-            //console.log(data.curTop);
-        }
-    });
-	skrollr.init({forceHeight: false});
-    
-} )( $ );
+	jQuery(document).ready(function() {
+	$( "#skrollr-body" ).slideDown( "slow","swing", function() {
+							     // Init Skrollr
+								 var s = skrollr.init({
+									 render: function(data) {
+										 //Debugging - Log the current scroll position.
+										 //console.log(data.curTop);
+										 					}
+										 			  });
+										 			  
+									skrollr.init({forceHeight: false});
+								                  });
+		});
+		
 
 
 

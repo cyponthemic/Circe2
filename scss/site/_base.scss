@@ -150,17 +150,20 @@ strong {
 //page 
 
 
+
+
 header.parralax {
+	display: none;
+	height: 250px;
+	
 	
 	position: relative;
-	height: 250px;
+	
 	width: 100%;
-	padding-top : 180px;
-	//background parralax
-	background-position: center center;
+	background-position: top center;
 	background-size: 100% ;
 	background-repeat: no-repeat;	
-	&:after{
+	&:after{	
 		position: absolute;
 		content:"";
 		top:0;
@@ -171,6 +174,11 @@ header.parralax {
 		background-color: black;
 		z-index: 0;
 	}
+	.entry-title-container{
+		position: absolute;
+		bottom: 5px;
+		left: 3*$gap;
+	}
 	h1 {
 	text-transform: uppercase;
 	position: relative;
@@ -179,7 +187,6 @@ header.parralax {
 	}
 	
 }
-
 // Footer
 
 #footer {

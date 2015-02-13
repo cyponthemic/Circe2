@@ -16,7 +16,7 @@ data-0="background-position:  50% 0%;"
 data-top-bottom="background-position: 50% 100%;"
 >
 	<div class="row">
-		<div class="large-offset-3 small-9 columns">
+		<div class="large-offset-3 small-9 columns entry-title-container">
 		
 		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) & is_shop()) : ?>
 			<h1 class="entry-title"><?php woocommerce_page_title(); ?></h1>		
