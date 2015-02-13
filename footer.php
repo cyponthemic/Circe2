@@ -1,10 +1,18 @@
 </section>
 <?php if (!is_front_page()) : ?>
-<footer class="row">
-	<?php do_action('foundationPress_before_footer'); ?>
-	<?php dynamic_sidebar("footer-widgets"); ?>
-	<?php do_action('foundationPress_after_footer'); ?>
-</footer>
+<div id="footer">
+	<footer class="row">
+		<div class="large-3 columns"> TEST</div>
+			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Sidebar Custom')) : ?>
+		<?php endif; ?>
+		<?php if ( has_nav_menu( 'footer-menu' ) ) {
+			
+			wp_nav_menu( array( 'theme_location' => 'footer-menu', 'menu_class' => 'inline-list', 'container' => 'nav', 'container_class' => 'small-12 large-3 columns test' ) );
+			
+		} ?>
+	
+	</footer>
+</div>
 <?php endif; ?>
 <a class="exit-off-canvas"></a>
 
@@ -21,3 +29,4 @@
 	  
   </script>
 </html>
+

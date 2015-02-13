@@ -191,7 +191,7 @@ header.parralax {
 
 #footer {
 	margin-top: $gap*3;
-	padding-top: $gap*3;
+	padding-top: $gap;
 	padding-bottom: $gap*3;
 	background-color: black;
 	
@@ -209,10 +209,53 @@ header.parralax {
 	}
 	.widget_text p {
 		color: white;
-		font-size: 14px;
-		&>b {
-			font-size: 16px;
+		font-size: 12px;
+		text-transform: uppercase;
+		text-align: center;
+		
+	}
+	
+	h4{
+		text-transform: uppercase;
+		width: 100%;
+		text-align: center;
+		font-size: 18px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		/* border-bottom: 1px solid; */
+	}
+	.button{
+		border: 0px solid white;
+		text-transform: uppercase;
+		background: #710833;
+			i{
+			font-size: 12px;
+			margin-right: 10px;
+			display: none;
+			}
+		font-size: 12px;
+		/* max-width: 90%; */
+		padding: 7%;
+		width: 100%;
+		&:hover{
+			border: 1px solid white;
 		}
+	}
+	input[type="text"] {
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid white;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: white;
+		box-shadow: none;
+		opacity: 1;
+	}
+}
+.reveal-modal{
+	background: #710833;
+	* {
+		color: white !important;
 	}
 }
 
@@ -234,6 +277,13 @@ header.parralax {
 	ul,li {
 		list-style: none;
 		font-size: 14px;
+	}
+	.button {
+		text-transform: uppercase;
+		font-size: 14px;
+		i {
+			margin-right: $gap;
+		}
 	}
 }
 
