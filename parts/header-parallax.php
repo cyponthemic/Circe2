@@ -5,6 +5,8 @@ global $post; ?>
 $ID=$post->ID;
 if (is_home()):
 $ID=109;
+elseif (is_shop() or is_product()):
+$ID=27;
 endif;
 $src = wp_get_attachment_image_src( get_post_thumbnail_id($ID), "full", false, '' );
 ?>
