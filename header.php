@@ -31,7 +31,7 @@
 		
 		<?php wp_head(); ?>
 	</head>
-	<body <?php body_class(); ?>>
+	<body id="skrollr-body" <?php body_class(); ?>>
 	<?php do_action('foundationPress_after_body'); ?>
 	
 	<div class="off-canvas-wrap" data-offcanvas>

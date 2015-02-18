@@ -23,7 +23,7 @@
 	});
 	
 	jQuery(document).ready(function() {
-	$( "#skrollr-body" ).slideDown( "slow","swing", function() {
+	$( "#ParralaxHeader" ).slideDown( "slow","swing", function() {
 							     // Init Skrollr
 								 var s = skrollr.init({
 									 render: function(data) {
@@ -125,6 +125,11 @@ $(function() {
     $('button[data-filter=".' + filterFromQuerystring  + '"]').click();
 });
 
+//// Parralax.jS loading
+
+jQuery('#scene').ready(function() {
+	jQuery('#scene').fadeIn("slow");
+});
 
 
 

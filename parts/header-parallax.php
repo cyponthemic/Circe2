@@ -11,7 +11,7 @@ $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), "full", fa
 	
            }
 </style>
-<header id="skrollr-body" class="parralax"
+<header id="ParralaxHeader" class="parralax"
 data-0="background-position:  50% 0%;"
 data-top-bottom="background-position: 50% 100%;"
 >
