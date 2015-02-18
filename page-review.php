@@ -64,17 +64,17 @@ get_header(); ?>
 			<div id="" class=" inner row">
 			
 				
-				<div style="opacity:0;" class="small-12 columns meta">
+				<div style="display:none;" class="small-12 columns meta">
 					<span class="genericon genericon-month"></span> <?php the_field('date'); ?>
 				</div>
 				
 				<div class="small-12 columns meta">
-					<span class="genericon genericon-tag"></span>	<?php echo the_product_reviewed()?> 			</div>
+					<span class="genericon fi-pricetag-multiple"></span>	<?php echo the_product_reviewed()?> 			</div>
 				<div class="small-4 columns meta" <?php if(get_field('Rating')<1){echo 'style="display:none;"';}?>>
-					<span class="genericon genericon-star"></span><?php if(get_field('Rating')>1){echo get_field('Rating')." pts";}?>
+					<span class="genericon fi-bookmark"></span><?php if(get_field('Rating')>1){echo get_field('Rating')." pts";}?>
 				</div>
 				<div class="small-6  columns meta">
-					<span class="genericon genericon-user"></span><?php echo get_field('author')?>
+					<span class="genericon fi-torso"></span><?php echo get_field('author')?>
 				</div>
 				<hr>
 				

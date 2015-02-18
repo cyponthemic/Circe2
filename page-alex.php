@@ -16,27 +16,9 @@ get_header(); ?>
 
 <div class="row main-row">
 	<div id="primary" class="site-content small-12 medium-12 large-9 large-offset-3 columns white">
-		<div id="content" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-					
-
-					<div class="entry-content">
-						<?php the_content(); ?>
-					</div>
-
-
-				</article>
-
-			<?php endwhile; ?>
-
-		</div>
-	</div>
-	<div class="side-content small-12 medium-12 large-9 large-offset-3 columns">
-	<a class="button" href="https://twitter.com/danbuckle"><i class="fi-social-twitter"></i>DanBuckle</a>
+	
+	test
+	
 	</div>
 	
 

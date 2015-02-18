@@ -6,3 +6,36 @@ body.archive{
 		height:54px;
 	}
 }
+
+.woocommerce-breadcrumb{
+	display: none;
+}
+.wcbreadcrumbs {
+	width: 80%;
+	a {
+		color: white;
+		font-size: 32px;
+		border-right: 2px solid white;
+		padding-right: 10px;
+		&:hover{
+			color: $pinot;
+		}
+	}
+
+}
+.ratings{
+	margin-bottom: $gap;
+.top-rating{
+	font-size: $paragraph-font-size;
+	margin-right: $gap/2;
+	&:before {
+	margin-right: $gap/2;
+	color: $pinot;
+	}
+}
+.see-all{
+	font-size: $paragraph-font-size;
+	color: $pinot;
+	
+}
+}

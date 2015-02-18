@@ -126,12 +126,7 @@ echo '<div class="quantity_select" style="' . $defaults['style'] . '"><select na
 } 
 
 
-add_action('woocommerce_single_product_summary', 'Professionalrating',25);
 
-
-function Professionalrating(){
-echo '<Span>Last rating'.' by '.'. ->see all</span>';
-}
 
 //TAB TEMPLATING
 
@@ -177,7 +172,7 @@ function woo_new_product_tab_content() {
 	// The new tab content
 	$WPID= get_the_id();
 	echo '<h2>Reviews</h2>';
-	echo '<p>for '.$WPID.'</p>';
+	echo '<p>for '.get_the_title().'</p>';
 	echo '<div class="row">';
 	
 	$loop = new WP_Query( 

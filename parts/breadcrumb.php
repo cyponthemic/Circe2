@@ -21,12 +21,12 @@ $shop_page    = get_post( $shop_page_id );
 
 // If permalinks contain the shop page in the URI prepend the breadcrumb with shop
 if ( $shop_page_id && $shop_page && strstr( $permalinks['product_base'], '/' . $shop_page->post_name ) && get_option( 'page_on_front' ) != $shop_page_id ) {
-	$prepend = $before . '<a href="' . get_permalink( $shop_page ) . '">' . $shop_page->post_title . '</a> ' . $after . $delimiter;
+	$prepend = $before . '<a class="" href="' . get_permalink( $shop_page ) . '">' . $shop_page->post_title . '</a> ' . $after . $delimiter;
 }
 
 if ( ( ! is_front_page() && ! ( is_post_type_archive() && get_option( 'page_on_front' ) == wc_get_page_id( 'shop' ) ) ) || is_paged() ) {
 
-	echo $wrap_before;
+	
 
 	if ( ! empty( $home ) ) {
 		echo $before . '<a class="home" href="' . apply_filters( 'woocommerce_breadcrumb_home_url', home_url() ) . '">' . $home . '</a>' . $after . $delimiter;
@@ -216,6 +216,6 @@ if ( ( ! is_front_page() && ! ( is_post_type_archive() && get_option( 'page_on_f
 		echo ' (' . __( 'Page', 'woocommerce' ) . ' ' . get_query_var( 'paged' ) . ')';
 	}
 
-	echo $wrap_after;
+	
 
 }

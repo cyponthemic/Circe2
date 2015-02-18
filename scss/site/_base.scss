@@ -188,7 +188,9 @@ header.parralax {
 	
 }
 // Footer
-
+button,.button {
+	background: $pinot;
+}
 #footer {
 	margin-top: $gap*3;
 	padding-top: $gap;
@@ -264,7 +266,7 @@ header.parralax {
 .main-row {
 	padding-top: 2*$gap;
 } 
-.side-content{
+.post-6	{
 	margin-top: 1em;
 	
 	img {
@@ -281,6 +283,7 @@ header.parralax {
 	.button {
 		text-transform: uppercase;
 		font-size: 14px;
+		background: $pinot;
 		i {
 			margin-right: $gap;
 		}

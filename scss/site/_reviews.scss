@@ -13,12 +13,15 @@
 		/* border: 1px solid black; */
 		margin-bottom: 5px;
 		&:hover{
-			color: $primary-color;
+			color: $pinot;
 		}
 		}
 		.is-checked{
-			background: $primary-color;
+			background: $pinot;
 			color: white;
+			&:hover{
+			color: white;
+		}
 		
 		}
 		.review{
@@ -43,18 +46,26 @@
 			}		
 		}
 		.meta{
-				
+		
 			
 			font-size: 12px;
 			font-weight: bold;
 			margin-bottom: $gap;
 			span{
 				color: $primary-color;
+				&:before{
+					color: $pinot;
+					margin-right: $gap/2;
+				}
 				&+.to-product{
 					font-size: 12px;
 					font-weight: bold;
 					margin-bottom: $gap;
-					color: black;}
+					color: black;
+					}
+				&+.to-product:hover{
+						color: $pinot;
+					}
 				}
 		}
 		.review-text * {
