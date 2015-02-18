@@ -1,9 +1,15 @@
+
 body.archive{
 	h1.product_title{
 		display: none;
 	}
+	button, .button{
+		font-size: 14px;
+		text-transform: uppercase;
+	}
 	select.qty {
-		height:54px;
+		height:49px;
+		width:50px;
 	}
 }
 
@@ -37,5 +43,38 @@ body.archive{
 	font-size: $paragraph-font-size;
 	color: $pinot;
 	
+}
+}
+
+
+
+head+.single-product{
+h1.product_title{
+		display: none;
+	}
+	select.qty {
+		height:49px;
+		width:50px;
+	}
+	button, .button{
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+
+.woocommerce-tabs{
+	margin-top: 2*$gap;
+	ul {
+		li{
+			display: inline-block;
+			padding: $gap/2 $gap*2;
+			a{
+				font-size: 14px;
+				text-transform: uppercase;
+			}
+		}
+		.active,.panel{
+			background-color: #e7e7e7;
+		}
+	}
 }
 }
