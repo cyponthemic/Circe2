@@ -2,7 +2,11 @@
 if(!is_front_page()):
 global $post; ?>
 <?php
-$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), "full", false, '' );
+$ID=$post->ID;
+if (is_home()):
+$ID=109;
+endif;
+$src = wp_get_attachment_image_src( get_post_thumbnail_id($ID), "full", false, '' );
 ?>
 
 <style>
@@ -22,7 +26,8 @@ data-top-bottom="background-position: 50% 100%;"
 			
 				<h1 class="wcbreadcrumbs"><?php get_template_part('parts/breadcrumb');?></h1>
 		
-					
+		<?php elseif (  is_home() ): ?>	
+				<h1 class="entry-title">News</h1>		
 		<?php else: ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 		<?php endif; ?>
