@@ -20,3 +20,32 @@ head+.home{
 }
 
 }
+
+head+.blog{
+background-color: #e7e7e7;
+
+article{
+	position: relative;
+	background-color: white;
+	margin-top: 2*$gap;
+	margin-bottom: 3*$gap;
+	padding: 2*$gap;
+	.entry-title{
+		margin-bottom: $gap*2;
+		a{font-size: 24px;}
+	}
+	hr{
+		display:none;
+	}
+	.more-link{
+		text-transform: uppercase;
+		font-size: 14px;
+		background: $pinot;
+		padding: $gap $gap*2;
+		color: white;
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+	}
+}
+}
