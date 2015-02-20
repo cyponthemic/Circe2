@@ -18,9 +18,11 @@
 
 	<?php do_action('foundationPress_layout_end'); ?>
 	</div>
+	</div>
 </div>
 <?php wp_footer(); ?>
 <?php do_action('foundationPress_before_closing_body'); ?>
+
 </body>
 <script>
 	  // Nothing new here...it's all in the CSS!

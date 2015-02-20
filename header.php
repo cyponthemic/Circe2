@@ -31,7 +31,7 @@
 		
 		<?php wp_head(); ?>
 	</head>
-	<body id="skrollr-body" <?php body_class(); ?>>
+	<body  <?php body_class(); ?>>
 	<?php do_action('foundationPress_after_body'); ?>
 	
 	<div class="off-canvas-wrap" data-offcanvas>
@@ -55,6 +55,7 @@
 	<!-- <?php get_template_part('parts/top-bar'); ?> -->
 	
 	<?php get_template_part('parts/floating-bar'); ?>
+	<div id="skrollr-body">
 	<?php get_template_part('parts/header-parallax'); ?>
 
 <section class="container" role="document">
