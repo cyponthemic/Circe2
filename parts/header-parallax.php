@@ -1,14 +1,21 @@
 <?php 
 if(!is_front_page()):
-global $post; ?>
-<?php
+global $post; 
+
 $ID=$post->ID;
 if (is_home()):
 $ID=109;
 elseif (is_shop() or is_product()):
 $ID=27;
 endif;
-$src = wp_get_attachment_image_src( get_post_thumbnail_id($ID), "full", false, '' );
+
+if (wp_is_mobile()):
+$thumbsize='medium';
+else : 
+$thumbsize='full';
+endif;
+
+$src = wp_get_attachment_image_src( get_post_thumbnail_id($ID), $thumbsize , false, '' );
 ?>
 
 <style>
@@ -21,7 +28,7 @@ $src = wp_get_attachment_image_src( get_post_thumbnail_id($ID), "full", false, '
 data-0="background-position:  50% 0%;"
 data-top-bottom="background-position: 50% 100%;"
 >
-	<div class="row">
+	<div class="row rowlative">
 		<div class="large-offset-3 small-9 columns entry-title-container">
 		
 		<?php if (  is_shop() or is_product()) : ?>

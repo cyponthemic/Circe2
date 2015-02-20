@@ -72,7 +72,9 @@ header.parralax {
 	}
 
 	}
+	.widget_text{margin-bottom: 3*$gap;}
 	.widget_text p {
+		
 		color: white;
 		font-size: 12px;
 		text-transform: uppercase;
@@ -100,8 +102,9 @@ header.parralax {
 			}
 		font-size: 12px;
 		/* max-width: 90%; */
-		padding: 7%;
-		width: 100%;
+		padding: 5%;
+width: 70%;
+margin-left: 15%;
 		&:hover{
 			border: 1px solid white;
 		}
@@ -166,5 +169,10 @@ h3 {
 	padding-left: 10px;
 	padding-right: 10px;
 }
-
+.reveal-modal {
+min-height: 0;
+width: 90%;
+left: 5%;
+top:35%;
+}
 }

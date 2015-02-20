@@ -174,10 +174,14 @@ header.parralax {
 		background-color: black;
 		z-index: 0;
 	}
+	.rowlative{
+	height: 100%;
+	position: relative;	
+	}
 	.entry-title-container{
 		position: absolute;
-		bottom: 5px;
-		left: 3*$gap;
+		bottom: 0;
+		
 	}
 	h1 {
 	text-transform: uppercase;

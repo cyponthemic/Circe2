@@ -1,6 +1,4 @@
 <nav id="floating"
-data--350-bottom-bottom='opactity :1 !important;'
-data--150-bottom-bottom='opactity :0 !important;'
 >	
 	<a href="<?php echo get_site_url(); ?>">
 	<img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/img/circe_wines_logo_sml.png">
