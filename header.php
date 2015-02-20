@@ -41,7 +41,7 @@
 	
 	<nav class="tab-bar show-for-small-only">
 		<section class="left-small">
-			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+			<a class="left-off-canvas-toggle " href="#"><span>MENU</span></a>
 		</section>
 		<section class="middle tab-bar-section">
 			

@@ -807,11 +807,11 @@ $h3-font-size: rem-calc(18);
 
 // $include-html-off-canvas-classes: $include-html-classes;
 
-// $tabbar-bg: $oil;
-// $tabbar-height: rem-calc(45);
-// $tabbar-icon-width: $tabbar-height;
-// $tabbar-line-height: $tabbar-height;
-// $tabbar-color: $white;
+$tabbar-bg: rgba(0,0,0,0);
+$tabbar-height: rem-calc(60);
+$tabbar-icon-width: rem-calc(60);
+/* $tabbar-line-height: rem-calc(50); */
+$tabbar-color: black;
 // $tabbar-middle-padding: 0 rem-calc(10);
 
 // Off Canvas Divider Styles
@@ -819,15 +819,15 @@ $h3-font-size: rem-calc(18);
 // $tabbar-left-section-border: solid 1px scale-color($tabbar-bg, $lightness: -50%);
 
 // Off Canvas Tab Bar Headers
-// $tabbar-header-color: $white;
+$tabbar-header-color: black;
 // $tabbar-header-weight: $font-weight-bold;
 // $tabbar-header-line-height: $tabbar-height;
 // $tabbar-header-margin: 0;
 
 // Off Canvas Menu Variables
 // $off-canvas-width: rem-calc(250);
-// $off-canvas-bg: $oil;
-// $off-canvas-bg-hover: scale-color($tabbar-bg, $lightness: -30%);
+$off-canvas-bg: white;
+$off-canvas-bg-hover: scale-color($tabbar-bg, $lightness: 30%);
 
 // Off Canvas Menu List Variables
 // $off-canvas-label-padding: 0.3rem rem-calc(15);
@@ -850,7 +850,7 @@ $h3-font-size: rem-calc(18);
 // $off-canvas-back-hover-border-bottom: none;
 
 // Off Canvas Menu Icon Variables
-// $tabbar-menu-icon-color: $white;
+$tabbar-menu-icon-color: black;
 // $tabbar-menu-icon-hover: scale-color($tabbar-menu-icon-color, $lightness: -30%);
 
 // $tabbar-menu-icon-text-indent: rem-calc(35);
@@ -1366,8 +1366,8 @@ $h3-font-size: rem-calc(18);
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
- $topbar-bg-color: black;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: rgba(255,255,255,0);
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: 45px;

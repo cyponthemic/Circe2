@@ -2,15 +2,32 @@
 // Documentation can be found at: http://foundation.zurb.com/docs
 // $(document).foundation(); 
 
+//	=========
+//	REPAINT FUNCTION AFTER RESIZE
+//	=========
+
+$.fn.redraw = function(){
+  $(this).each(function(){
+    var redraw = this.offsetHeight;
+  });
+};
+
+//	=========
+//	INIT JQUERY CUSTOM FUNCTIONS
+//	=========
 
 	jQuery(document).ready(function() {
-	
+
+//	=========
+//	FLOATING MENU POSITION FOLOWING THE GRID
+//	=========
+
 	if ( $(window).width()>1025 ) {
 	var gap = ($(window).width()-1025)/2;
 	$( "#floating" ).offset({ left: gap }).fadeIn("slow");
 	}
 	});
-	
+
 	jQuery(window).resize(function() {
 	if ( $(window).width()<1025 ) {
 	$( "#floating" ).fadeOut(1);
@@ -21,6 +38,25 @@
 	$( "#floating" ).offset({ left: gap }).fadeIn("slow");
 	}
 	});
+
+//	=========
+//	FALL BACK VH FOR THE HOME PAGE
+//	=========
+
+	jQuery(document).ready(function() {
+	$( "#scene" ).height(jQuery(window).height());
+	$( "#scene" ).fadeIn("slow");
+	$( "li" ).redraw();
+	$( "img" ).redraw();
+	});
+	jQuery(window).resize(function() {
+	$( "#scene" ).height(jQuery(window).height());
+	});
+
+
+//	=========
+//	SLIDE DOWN EFFECT PARRALLAX HEADER
+//	=========
 	
 	jQuery(document).ready(function() {
 	$( "#ParralaxHeader" ).slideDown( "slow","swing", function() {
@@ -34,10 +70,18 @@
 										 			  
 									skrollr.init({forceHeight: false});
 								                  });
-		});
+		
+	$('.left-off-canvas-toggle ').click( function() {
+		$("html, body").animate({ scrollTop: 0 }, 600);
+    
+ 
+		});	
+	});
 		
 
-
+//	=========
+//	SLIDE BARS FOR REVIEWS
+//	=========
 
 
 jQuery(document).ready(function(){
@@ -53,7 +97,10 @@ jQuery(document).ready(function(){
 });
 
 
-///Isotope
+//	=========
+//	ISOTOPE
+//	=========
+
 
 jQuery( function() {
   // init Isotope
@@ -104,7 +151,9 @@ jQuery( function() {
   
 });
 
-///////////
+//	=========
+//	ISOTOPE FILTERING BY URL
+//	=========
 
 
 function getParameterByName(name)
@@ -125,11 +174,6 @@ $(function() {
     $('button[data-filter=".' + filterFromQuerystring  + '"]').click();
 });
 
-//// Parralax.jS loading
+////
 
-jQuery('#scene').ready(function() {
-	jQuery('#scene').fadeIn("slow");
-});
-
-
-
+ 

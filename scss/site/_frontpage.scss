@@ -1,21 +1,33 @@
+
+/*
+------------------------
+Mobile
+------------------------
+*/
+#scene{
+	display: none;
+}
 head+.home{
-	/* border: 10px solid black; */
-	max-height: 100vh;
-//Floating bar
+	
 	.logo{
 		display: none;
 	}
 	.logotype{
-	width: 70%;
-	margin: 72px 15%;
+	width: 50%;
+	margin: 72px 25%;
 	}
 //Parallax.js
 .window-height{
-	height: 100vh;
+	
 	width: auto;
 	overflow: hidden;
-	li {
-		width: 100%;
+	ul {
+		margin-left: -50px;
+	}
+	ul,li,img {
+		height: 100%;
+		width: auto;
+		max-width: none;
 	}
 }
 
@@ -48,4 +60,72 @@ article{
 		bottom: 0px;
 	}
 }
+}
+
+
+/*
+------------------------
+Desktop
+------------------------
+*/
+
+@media #{$large-only} { 
+head+.home{
+//Floating bar
+	.logo{
+		display: none;
+	}
+	.logotype{
+	width: 70%;
+	margin: 72px 15%;
+	}
+//Parallax.js
+.window-height{
+	width: auto;
+	overflow: hidden;
+	li {
+		width: 100%;
+	}
+	ul {
+		margin-left: 0px;
+	}
+	ul,li,img {
+		height: auto;
+		width: 100%;
+		max-width: none;
+	}
+}
+
+}
+
+head+.blog{
+background-color: #e7e7e7;
+
+article{
+	position: relative;
+	background-color: white;
+	margin-top: 2*$gap;
+	margin-bottom: 3*$gap;
+	padding: 2*$gap;
+	.entry-title{
+		margin-bottom: $gap*2;
+		a{font-size: 24px;}
+	}
+	hr{
+		display:none;
+	}
+	
+	.more-link{
+		text-transform: uppercase;
+		font-size: 14px;
+		background: $pinot;
+		padding: $gap $gap*2;
+		color: white;
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+	}
+}
+}
+
 }
