@@ -5,6 +5,7 @@
 		.left-small{
 			background-color: $pinot;
 			position: fixed;
+			-webkit-backface-visibility: hidden;
 			z-index: 1003;
 			left: $gap;
 			top: $gap;
