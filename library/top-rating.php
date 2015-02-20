@@ -62,4 +62,14 @@ function Professionalrating(){
 		
 
 							}
+
+add_action( 'woocommerce_single_product_summary', 'wrap_price_cart_before', 26 );
+					add_action( 'woocommerce_single_product_summary', 'wrap_price_cart_after', 31 );
+					function wrap_price_cart_before() {
+						echo '<div class="price-cart">';
+					}
+					
+					function wrap_price_cart_after() {
+						echo '</div>';
+					}	
 ?>

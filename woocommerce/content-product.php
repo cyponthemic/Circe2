@@ -35,9 +35,9 @@ if ( 0 == ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 
 if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 	$classes[] = 'last';
 ?>
-<div <?php post_class( " row" ); ?>>
+<div <?php post_class( " row" ); ?> data-equalizer>
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
-	<div class="small-12 medium-6 product-image columns">
+	<div class="small-12 medium-6 product-image columns" data-equalizer-watch>
 	<a href="<?php the_permalink(); ?>">
 
 		<?php
@@ -51,7 +51,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 		?>
 	</a>
 	</div>
-	<div class="small-12 product-description medium-6 columns">
+	<div class="small-12 product-description medium-6 columns" data-equalizer-watch>
 	<a href="<?php the_permalink(); ?>">
 		<h3><?php the_title(); ?></h3>
 	</a>
@@ -61,8 +61,14 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 			 * woocommerce_after_shop_loop_item_title hook
 			 *
 			 * @hooked woocommerce_template_loop_rating - 5
-			 * @hooked woocommerce_template_loop_price - 10
+			 * @hooked woocommerce_template_loop_price - 26
 			 */
+			 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+					
+					
+							 
+			 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 27 );
+			
 			 do_action( 'woocommerce_single_product_summary' );
 			/* do_action( 'woocommerce_after_shop_loop_item_title' ); */
 		?>
