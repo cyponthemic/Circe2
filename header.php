@@ -39,7 +39,7 @@
 	
 	<?php do_action('foundationPress_layout_start'); ?>
 	
-	<nav class="tab-bar hide-for-large-only">
+	<nav class="tab-bar hide-for-large-up">
 		<section class="left-small">
 			<a class="left-off-canvas-toggle " href="#"><span>MENU</span></a>
 		</section>
